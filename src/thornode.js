@@ -176,6 +176,7 @@ module.exports = {
 	getNodes,
 	getConstants,
 	getMimir,
+	getMimirVotes,
 	getThorPools,
 	getLpPositions,
 	getThorRunePool,

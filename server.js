@@ -177,8 +177,8 @@ var mainnet = {
 }
 
 var test = {
-	nodeOverview: {
-		fetcher: requests.nodeOverview,
+	mimirVotes: {
+		fetcher: requests.mimirVotes,
 		updateEvery: 20
 	},
 }
@@ -238,7 +238,7 @@ process.on('unhandledRejection', (reason, promise) => {
 /* Update all the values at server init */
 async function mainFunction() {
 	if (process.env.NETWORK === 'mainnet') {
-		actions = {...mainnet, ...actions}
+		actions = {...test}
 	}
 
 	initActionsFromStorage();
